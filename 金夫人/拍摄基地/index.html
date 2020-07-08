@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <div class="nav">
+        <div class="nav_top">
+            <input type="text" name="" id="" placeholder="SEARCH">
+            <span>登录/注册</span>
+        </div>
+        <ul class="nav_bottom">
+            <ol><a href="../首页/index.html">首页</a></ol>
+            <ol><a href="../拍摄基地/index.html">拍摄基地</a></ol>
+            <ol><a href="../真实客照/index.html">真实客照</a></ol>
+            <ol><a href="../选择影师/index.html">选择影师</a></ol>
+            <ol><a href="">礼服妆容</a></ol>
+            <ol><a href="../公司简介/index.html">品牌简介</a></ol>
+        </ul>
+    </div>
+    <!-- banner图 -->
+    <div class="carousel">
+        <div class="carousel_img">
+            <img src="../images/5.png" class="active" />
+            <img src="../images/33.jpg" />
+            <img src="../images/44.jpg" />
+        </div>
+        <ul>
+            <li sg="0" class="active"></li>
+            <li sg="1"></li>
+            <li sg="2"></li>
+        </ul>
+    </div>
+    <!-- main1 -->
+    <div class="main">
+        <div class="main_top">
+            <div class="main_top_dh">
+                <a href="">首页</a> ： <a href="">拍摄基地</a> > <a href="">湖畔公主馆</a> > <a href="" class="zh">卢森堡长廊</a>
+            </div>
+
+        </div>
+        <div class="main_bottom">
+            <div class="main_left">
+                <h2><a href="">拍摄基地</a></h2>
+                <div class="wy">
+                    <h3> <a href=""> ◎ 湖畔公主馆 - </a></h3>
+                    <h4><a href="">卢森堡长廊</a></h4>
+                </div>
+                <h4><a href="">星辰水晶教堂</a></h4>
+                <h4><a href="">圣恩教堂</a></h4>
+                <h4><a href="">依云湖</a></h4>
+                <h3><a href="">星光.夏朵+</a></h3>
+                <h3><a href="">秘密花园</a></h3>
+                <h3><a href="">梦幻空间</a></h3>
+            </div>
+            <div class="main_right">
+                <div class="main_r_top">
+                    <div class="main1">
+                        <p>
+                            卢森堡公园(法语: JARDIN DU LUXEMBOURG)是- 座处于巴黎第六区，拉丁区中央的公园，于1612
+                            年玛丽.德.美第奇的统治下建成。卢森堡公园面积为224,500平方米，有巨大的梧桐大道与花圆、喷
+                            泉，以及许多上古智者的雕像。还有皇帝的别宫卢森堡宫(PALAIS DU LUXEMBOURG)。是国会议员
+                            的宿舍。
+                        </p>
+                        <p>
+                            卢森堡公园还与亨利四世有关，但比浮日广场晚些，公园内的宫殿是亨利四世被刺后为玛丽皇后建造的
+                            不知道这位皇太后会不会也像中国的那些年轻的太后们一-样对于权力很感兴趣，只是看到- -个略大于街
+                            心花圆的树丛。塑像有梭角的小径。散落在各个角落里的座椅组成的公园。
+                        </p>
+                        <p>
+                            以前读过陈从周的一篇谈中国国林变成 公众游览地后的接待困难的文章，内中分析了私家圆林和公众园
+                            林区别，今天算是在这儿映证了。整个卢森堡公园向四面八方敞开，园中的道路是平直的。树冠很高增
+                            加了视觉的通透性，中央水池和花坛周围有大量的空地。
+                        </p>
+                    </div>
+                    <div class="bt">
+                        <h2>卢森堡长廊</h2>
+                        <h3>LUXEMBURG CORRIDOR</h3>
+                    </div>
+                    <div class="main_bj"></div>
+                    <div class="main_tu">
+                        <img src="../images/子网页main.png" alt="">
+                    </div>
+                </div>
+                <div class="carq">
+                    <div class="carq_img">
+                        <img src="../images/子网页1.png" alt="">
+                        <img src="../images/子网页2.png" alt="" class="tiv">
+                        <img src="../images/子网页3.png" alt="">
+                        <img src="../images/子网页4.jpg" alt="">
+                        <img src="../images/子网页5.jpg" alt="">
+                        <img src="../images/子网页6.png" alt="">
+                    </div>
+                    <div class="carq_but">
+                        <button>&lt;</button>
+                        <button>&gt;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- foot -->
+    <div class="footWrap">
+        <div class="foot">
+            <p>@COPYRIGHT 2009 2017版权所有重庆金夫人实业有限公司增值电信业务许可证:渝ICP备11007647号-13 技术支持:成都岸境科技</p>
+        </div>
+    </div>
+    <script>
+// 子网页轮播图
+        var main = document.getElementsByClassName("main")[0];
+        var carq = main.getElementsByClassName("carq")[0];
+        var imgs = carq.getElementsByTagName("img");
+        var imgwrap = document.getElementsByClassName("carq_img")[0];
+        var btn = document.getElementsByClassName("carq_but")[0];
+        var btns = btn.getElementsByTagName("button");
+        var c = 0;
+        console.log(imgs)
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].onclick = function () {
+                if (this.innerHTML =="&gt;") {
+                    c+=1;
+                    if (c == 3) {
+                        c = 0;
+                    }
+                    for (var v = 0; v < imgs.length; v++) {
+                        imgs[v].className = "";
+                    }
+
+                    imgwrap.style.left = c * -258 + "px"
+                        imgs[c].className = "tiv";
+                } else {
+                    c++;
+                    if (c == -1) {
+                        c = 3;
+                    }
+                    for (var i in imgs) {
+                        imgs[i].className = "";
+                    }
+                    imgwrap.style.left = c * -258 + "px"
+                        imgs[c].className = "tiv";
+                }
+            }
+        }
+// banner轮播图
+        var car = document.getElementsByClassName("carousel")[0];
+        var car_img = document.getElementsByClassName("carousel_img")[0];
+        var imgs = car.getElementsByTagName("img");
+        var lis = document.getElementsByTagName("li");
+        var j = 0;
+
+        for (var i in lis) {
+            lis[i].onclick = function () {
+                j = parseInt(this.getAttribute("sg"));
+                for (var i = 0; i < lis.length; i++) {
+                    lis[i].className = "";
+                    imgs[i].className = ""
+                }
+                lis[j].className = "active";
+                imgs[j].className = "active";
+
+            }
+        }
+        timer = setInterval(function () {
+            j++;
+            if (j == 3) {
+                j = 0;
+            }
+            for (var i = 0; i < imgs.length; i++) {
+                lis[i].className = "";
+                imgs[i].className = "";
+            }
+            lis[j].className = "active";
+            imgs[j].className = "active";
+        }, 3000)
+
+        car.onmouseover = function () {
+            clearInterval(timer);
+            timer = null
+        }
+
+        car.onmouseout = function () {
+            timer = setInterval(function () {
+                j++;
+                if (j == 3) {
+                    j = 0;
+                }
+                for (var i = 0; i < imgs.length; i++) {
+                    lis[i].className = "";
+                    imgs[i].className = "";
+                }
+                lis[j].className = "active";
+                imgs[j].className = "active";
+            }, 3000)
+        }
+    </script>
+</body>
+
+</html>
